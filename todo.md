@@ -1,0 +1,41 @@
+# Project TODO
+
+- [x] Define LMS domain enums, relationships, statuses, and role boundaries for `super_admin`, `admin`, and `user`.
+- [x] Extend the database schema for users, courses, modules, lessons, enrollments, progress, assignments, rubrics, submissions, AI reviews, final reviews, notifications, and audit logs.
+- [x] Centralize core course lifecycle, learner-progress, and workflow-event operations in typed database and service helpers.
+- [x] Implement backend RBAC procedures and course-scope guards for Super Admin, Admin, and Learner.
+- [x] Create an elegant, responsive dashboard shell with role-aware navigation, loading states, and empty states.
+- [x] Build the Super Admin dashboard with system statistics and recent audit activity.
+- [x] Complete the Admin dashboard with per-course learner-progress insights alongside pending-review metrics.
+- [x] Add learner-dashboard content sections for upcoming assignments and approved feedback/resubmission shortcuts alongside per-course completion progress.
+- [x] Add explicit learner-dashboard resubmission shortcut buttons for returned assignments that allow another attempt.
+- [x] Complete Admin course management with edit flows for course, module, and lesson content.
+- [x] Add Admin enrollment management UI and finish the dedicated learner course-player experience.
+- [x] Implement lesson completion tracking and accurate course progress percentages.
+- [x] Replace the default-only rubric with a full Admin rubric editor for multiple criteria, weights, performance levels, and score ranges.
+- [x] Implement learner text submission editor, draft handling, attempt history, and submission-status display.
+- [x] Implement the server-side AI review engine with strict JSON Schema validation, per-criterion feedback, confidence, and human-review gating.
+- [x] Ensure AI-generated feedback is never returned to Learner procedures or learner-facing routes before Admin approval.
+- [x] Complete Admin review queue filters for status, confidence, course, and date.
+- [x] Implement Admin review detail with AI comparison, score/feedback editing, approve, return-for-revision, and final-grade actions.
+- [x] Add a learner-facing approved-feedback and explicit resubmission control when allowed by the assignment.
+- [x] Implement Super Admin user management with search, role changes, activation, and deactivation.
+- [x] Implement audit logging for role changes, course changes, rubric edits, AI review creation, and grade approvals.
+- [x] Implement in-app notifications and an email-notification integration boundary for new submissions, approved reviews, and returned submissions.
+- [x] Add role, lifecycle, AI-schema, access-control, notification, and audit-log Vitest coverage.
+- [x] Run type checks and test suite; inspect server/browser logs and fix defects.
+- [x] Add behavior-level Vitest coverage for LMS audit-log and in-app notification creation on submission, approval, and return actions.
+- [x] Add integration-style router-flow tests for submission and review decisions that assert the workflow event collaborators are invoked.
+- [x] Verify the responsive visual experience on desktop and mobile across dashboard, courses, operations, review queue, users, audit, and notifications before saving the final checkpoint.
+- [x] Defer provider email activation until the user supplies verified sending credentials.
+- [x] Create isolated test records for one Admin and two Learners without altering production user accounts.
+- [x] Exercise Admin course creation, module and lesson setup, assignment/rubric configuration, and learner enrollment.
+- [x] Exercise learner draft/submission and Admin AI-review plus approve/return decision paths using non-user-generated test content.
+- [x] Verify role enforcement, course progress, audit entries, and in-app notifications for the end-to-end test flow.
+- [x] Remove all isolated test records and report the end-to-end test results.
+- [x] Report the completed isolated E2E test results and cleanup confirmation to the user.
+- [ ] Define and apply a cohesive premium design system with a calm educational palette and legible editorial typography.
+- [ ] Redesign navigation, dashboards, cards, forms, tables, empty states, and mobile controls for consistent product-quality hierarchy.
+- [ ] Verify redesigned authenticated screens on desktop and mobile, then run type checks, tests, and a production build.
+- [ ] Publish the latest code to the selected GitHub repository as a public repository.
+- [ ] Deploy the verified repository to Vercel and confirm the resulting public deployment URL.
