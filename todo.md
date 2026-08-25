@@ -54,5 +54,6 @@
 - [x] Replace the transparent sidebar treatment with a solid surface and accessible text/icon contrast.
 - [x] Clarify active, hover, and focus navigation states for the desktop sidebar and mobile drawer.
 - [x] Verify sidebar legibility on desktop and mobile, then run checks and release the fix to GitHub and Vercel.
-- [ ] Push the sidebar contrast fix to GitHub public and confirm Vercel production deployment is ready.
-- [ ] Capture explicit mobile drawer-open verification for the updated sidebar surface and active state.
+- [x] Push the sidebar contrast fix to GitHub public and confirm Vercel production deployment is ready.
+- [x] Capture explicit mobile drawer-open verification for the updated sidebar surface and active state.
+- [x] Document the explicit mobile drawer-open QA result with solid surface, readable navigation, and active state visibility.
