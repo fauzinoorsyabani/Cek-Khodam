@@ -29,11 +29,11 @@ function StatusBadge({ value }: { value: string }) {
 }
 
 function PageTitle({ eyebrow, title, detail, action }: { eyebrow: string; title: string; detail: string; action?: React.ReactNode }) {
-  return <div className="mb-8 flex flex-col gap-5 md:flex-row md:items-end md:justify-between"><div><p className="text-[10px] font-bold uppercase tracking-[.18em] text-[#607ad2]">{eyebrow}</p><h1 className="mt-2 text-3xl font-semibold tracking-[-.04em] text-[#18275a] md:text-[2.15rem]">{title}</h1><p className="mt-2 max-w-2xl text-sm leading-6 text-[#6f7b94]">{detail}</p></div>{action}</div>;
+  return <div className="luma-page-title mb-8 flex flex-col gap-5 md:flex-row md:items-end md:justify-between"><div><p className="text-[10px] font-bold uppercase tracking-[.18em] text-[#607ad2]">{eyebrow}</p><h1 className="mt-2 text-3xl font-semibold tracking-[-.04em] text-[#18275a] md:text-[2.15rem]">{title}</h1><p className="mt-2 max-w-2xl text-sm leading-6 text-[#6f7b94]">{detail}</p></div>{action}</div>;
 }
 
 function EmptyState({ title, detail, action }: { title: string; detail: string; action?: React.ReactNode }) {
-  return <div className="grid min-h-56 place-items-center rounded-2xl border border-dashed border-[#d7deeb] bg-white/65 p-8 text-center"><div><div className="mx-auto grid h-11 w-11 place-items-center rounded-2xl bg-[#eef2ff] text-[#3d5fce]"><Sparkles className="h-5 w-5" /></div><h3 className="mt-4 font-semibold text-[#26345b]">{title}</h3><p className="mx-auto mt-2 max-w-md text-sm leading-6 text-[#7b879e]">{detail}</p>{action && <div className="mt-5">{action}</div>}</div></div>;
+  return <div className="luma-empty-state grid min-h-56 place-items-center rounded-2xl border border-dashed border-[#d7deeb] bg-white/65 p-8 text-center"><div><div className="luma-empty-icon mx-auto grid h-11 w-11 place-items-center rounded-2xl bg-[#eef2ff] text-[#3d5fce]"><Sparkles className="h-5 w-5" /></div><h3 className="mt-4 font-semibold text-[#26345b]">{title}</h3><p className="mx-auto mt-2 max-w-md text-sm leading-6 text-[#7b879e]">{detail}</p>{action && <div className="mt-5">{action}</div>}</div></div>;
 }
 
 function RoleGuard({ allow, children }: { allow: UserRole[]; children: React.ReactNode }) {

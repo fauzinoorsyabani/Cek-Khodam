@@ -101,3 +101,21 @@ input, textarea, button { font-family: inherit; }
 .luma-wordmark { letter-spacing: -0.04em; }
 .luma-mark { position: relative; overflow: hidden; }
 .luma-mark::after { content: ""; position: absolute; width: 18px; height: 18px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; right: -6px; top: -6px; }
+.luma-page-title { padding-bottom: 0.25rem; }
+.luma-page-title > p:first-child { color: var(--forest) !important; letter-spacing: .16em; }
+.luma-page-title h1 { color: var(--ink) !important; font-weight: 750; letter-spacing: -0.05em; }
+.luma-empty-state { border-color: var(--line) !important; background: linear-gradient(135deg, rgba(255,255,252,.92), rgba(238,244,238,.66)) !important; box-shadow: inset 0 1px 0 rgba(255,255,255,.75); }
+.luma-empty-state .luma-empty-icon { background: var(--forest-pale) !important; color: var(--forest) !important; }
+
+input:not([type="checkbox"]):not([type="radio"]), textarea, [role="combobox"] { border-color: var(--line) !important; background-color: #fffefa !important; box-shadow: 0 1px 2px rgba(30, 41, 35, .025); }
+input:not([type="checkbox"]):not([type="radio"]):focus, textarea:focus, [role="combobox"][data-state="open"] { border-color: #8eb29f !important; box-shadow: 0 0 0 3px rgba(36, 91, 73, .11) !important; outline: none; }
+textarea { line-height: 1.65 !important; }
+table { border-collapse: separate; border-spacing: 0; overflow: hidden; border: 1px solid var(--line); border-radius: .8rem; background: #fffefa; }
+thead { background: var(--linen-deep); color: var(--ink-soft); }
+tbody tr { transition: background-color 160ms var(--ease-out, ease); }
+tbody tr:hover { background: #f4f8f4; }
+@media (max-width: 640px) {
+  input:not([type="checkbox"]):not([type="radio"]), textarea, [role="combobox"] { min-height: 2.75rem; font-size: 16px; }
+  .luma-page-title { margin-bottom: 1.5rem; }
+  .luma-page-title h1 { font-size: 2rem; line-height: 1.08; }
+}
