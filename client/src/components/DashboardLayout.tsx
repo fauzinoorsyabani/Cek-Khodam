@@ -61,7 +61,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   return (
     <SidebarProvider defaultOpen>
-      <Sidebar collapsible="icon" className="border-r border-[#e7ebf3] bg-[#fbfcfe]">
+      <Sidebar collapsible="icon" className="sidebar-solid border-r border-[#cfd8d1] bg-[#edf3ee]">
         <div className="flex h-full flex-col">
           <div className="flex h-20 items-center gap-3 px-5 group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:px-2">
             <div className="luma-mark grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#19295b] text-white shadow-[0_10px_24px_rgba(25,41,91,.24)]"><GraduationCap className="h-5 w-5" /></div>

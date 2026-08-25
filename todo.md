@@ -51,3 +51,8 @@
 - [x] Re-run final mobile verification for the Pengguna screen after the latest card refinement pass.
 - [x] Capture user-list and audit/notification empty states explicitly on desktop and mobile after the final UI pass.
 - [x] Document the final route-specific state verification for Pengguna, Audit, and Notifikasi on desktop and mobile.
+- [x] Replace the transparent sidebar treatment with a solid surface and accessible text/icon contrast.
+- [x] Clarify active, hover, and focus navigation states for the desktop sidebar and mobile drawer.
+- [x] Verify sidebar legibility on desktop and mobile, then run checks and release the fix to GitHub and Vercel.
+- [ ] Push the sidebar contrast fix to GitHub public and confirm Vercel production deployment is ready.
+- [ ] Capture explicit mobile drawer-open verification for the updated sidebar surface and active state.

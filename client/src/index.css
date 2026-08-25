@@ -110,6 +110,22 @@ input, textarea, button { font-family: inherit; }
 [data-slot="card"]::before { content: ""; position: absolute; inset: 0 0 auto; height: 2px; background: linear-gradient(90deg, rgba(36,91,73,.62), rgba(36,91,73,0)); opacity: .45; pointer-events: none; }
 [data-slot="card"] [data-slot="card-description"] { color: var(--ink-muted); }
 
+/* Sidebar accessibility: opaque surface and high-contrast navigation states. */
+.sidebar-solid [data-slot="sidebar-inner"],
+[data-slot="sidebar"][data-mobile="true"] { background: #edf3ee !important; color: #1e2923 !important; box-shadow: inset -1px 0 0 #cfd8d1; }
+.sidebar-solid [data-sidebar="menu-button"],
+[data-slot="sidebar"][data-mobile="true"] [data-sidebar="menu-button"] { color: #365247 !important; font-weight: 650; }
+.sidebar-solid [data-sidebar="menu-button"]:hover,
+[data-slot="sidebar"][data-mobile="true"] [data-sidebar="menu-button"]:hover { background: #dbe9df !important; color: #173f33 !important; }
+.sidebar-solid [data-sidebar="menu-button"][data-active="true"],
+[data-slot="sidebar"][data-mobile="true"] [data-sidebar="menu-button"][data-active="true"] { background: #1e4b3c !important; color: #ffffff !important; box-shadow: 0 6px 16px rgba(30, 75, 60, .18); }
+.sidebar-solid [data-sidebar="menu-button"][data-active="true"] svg,
+[data-slot="sidebar"][data-mobile="true"] [data-sidebar="menu-button"][data-active="true"] svg { color: #ffffff !important; }
+.sidebar-solid [data-sidebar="menu-button"]:focus-visible,
+[data-slot="sidebar"][data-mobile="true"] [data-sidebar="menu-button"]:focus-visible { outline: 3px solid rgba(36, 91, 73, .35); outline-offset: 2px; }
+.sidebar-solid [data-sidebar="group-label"],
+[data-slot="sidebar"][data-mobile="true"] [data-sidebar="group-label"] { color: #60756a !important; }
+
 input:not([type="checkbox"]):not([type="radio"]), textarea, [role="combobox"] { border-color: var(--line) !important; background-color: #fffefa !important; box-shadow: 0 1px 2px rgba(30, 41, 35, .025); }
 input:not([type="checkbox"]):not([type="radio"]):focus, textarea:focus, [role="combobox"][data-state="open"] { border-color: #8eb29f !important; box-shadow: 0 0 0 3px rgba(36, 91, 73, .11) !important; outline: none; }
 textarea { line-height: 1.65 !important; }
