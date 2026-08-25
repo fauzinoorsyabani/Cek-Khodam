@@ -106,6 +106,9 @@ input, textarea, button { font-family: inherit; }
 .luma-page-title h1 { color: var(--ink) !important; font-weight: 750; letter-spacing: -0.05em; }
 .luma-empty-state { border-color: var(--line) !important; background: linear-gradient(135deg, rgba(255,255,252,.92), rgba(238,244,238,.66)) !important; box-shadow: inset 0 1px 0 rgba(255,255,255,.75); }
 .luma-empty-state .luma-empty-icon { background: var(--forest-pale) !important; color: var(--forest) !important; }
+[data-slot="card"] { position: relative; overflow: hidden; }
+[data-slot="card"]::before { content: ""; position: absolute; inset: 0 0 auto; height: 2px; background: linear-gradient(90deg, rgba(36,91,73,.62), rgba(36,91,73,0)); opacity: .45; pointer-events: none; }
+[data-slot="card"] [data-slot="card-description"] { color: var(--ink-muted); }
 
 input:not([type="checkbox"]):not([type="radio"]), textarea, [role="combobox"] { border-color: var(--line) !important; background-color: #fffefa !important; box-shadow: 0 1px 2px rgba(30, 41, 35, .025); }
 input:not([type="checkbox"]):not([type="radio"]):focus, textarea:focus, [role="combobox"][data-state="open"] { border-color: #8eb29f !important; box-shadow: 0 0 0 3px rgba(36, 91, 73, .11) !important; outline: none; }

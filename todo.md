@@ -39,4 +39,15 @@
 - [x] Verify redesigned authenticated screens on desktop and mobile, then run type checks, tests, and a production build.
 - [x] Publish the latest code to the selected GitHub repository as a public repository.
 - [x] Deploy the verified repository to Vercel and confirm the resulting public deployment URL.
-- [ ] Apply and verify page-level UI refinements for cards, forms, tables, empty states, and mobile controls across LMS screens.
+- [x] Apply and verify page-level UI refinements for cards, forms, tables, empty states, and mobile controls across LMS screens.
+- [x] Apply explicit page-level card refinements across LMS pages and verify them in code.
+- [x] Verify the latest desktop and mobile treatment across courses, operations, review queue, users, audit, notifications, and representative form/table/empty states.
+- [x] Verify final mobile treatment for audit and notifications after the latest refinement pass.
+- [x] Exercise and verify representative form, table, and empty states after the final UI refinements.
+- [x] Exercise and visually verify course, rubric, and review-decision form states after the final refinement pass.
+- [x] Exercise and visually verify data-list and empty states on users, audit, and notifications across desktop and mobile.
+- [x] Open and verify course-management, rubric-builder, and review-decision form states on their dedicated routes after the final refinement pass.
+- [x] Exercise and verify users, audit, and notifications list and empty states across desktop and mobile with route-specific evidence.
+- [x] Re-run final mobile verification for the Pengguna screen after the latest card refinement pass.
+- [x] Capture user-list and audit/notification empty states explicitly on desktop and mobile after the final UI pass.
+- [x] Document the final route-specific state verification for Pengguna, Audit, and Notifikasi on desktop and mobile.

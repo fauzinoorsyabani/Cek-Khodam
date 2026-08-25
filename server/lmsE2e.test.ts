@@ -9,7 +9,7 @@ import {
 import type { TrpcContext } from "./_core/context";
 
 const runE2e = process.env.RUN_LMS_E2E === "1" ? describe : describe.skip;
-const runId = `e2e-${Date.now()}`;
+const runId = process.env.LMS_E2E_RUN_ID ?? `e2e-${Date.now()}`;
 const emailDomain = `${runId}.test`;
 let admin: typeof users.$inferSelect;
 let learnerOne: typeof users.$inferSelect;
@@ -128,6 +128,7 @@ runE2e("LMS end-to-end isolated workflow", () => {
   }, 60_000);
 
   afterAll(async () => {
+    if (process.env.KEEP_LMS_E2E_FIXTURE === "1") return;
     const db = await getDb();
     if (!db) return;
     const userIds = [admin.id, learnerOne.id, learnerTwo.id].filter(Boolean);
